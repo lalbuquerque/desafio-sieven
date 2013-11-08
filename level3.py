@@ -3,11 +3,11 @@ import re
 import locale
 import request
 
-heeaders = { 'User-Agent' :  'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0',
+headers = { 'User-Agent' :  'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0',
             'Cookie' :  'd53db4de415c4e858dc761595623a898=+; Path=/\r\n'  }
 request = request.RequestUrl()
 site_status_1 = request.open_url_and_get_content('http://hughes.sieve.com.br:8000/level3/', headers=headers)
-eaders = { 'User-Agent' :  'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0',
+headers = { 'User-Agent' :  'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Gecko/20100101 Firefox/25.0',
             'Cookie' :  'd53db4de415c4e858dc761595623a898=+; Path=/\r\n'  }
 request = request.RequestUrl()
 site_status_1 = request.open_url_and_get_content('http://hughes.sieve.com.br:8000/level3/', headers=headers)
