@@ -11,6 +11,6 @@ headers = { 'User-Agent' :  'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:25.0) Geck
 feeddata = request.open_url_and_get_content('http://hughes.sieve.com.br:8000/level4/')
 locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 pattern = r'R\$ ([\d\.,]+)'
-match = re.search(pattern, site_status_3)
+match = re.search(pattern, feeddata)
 price = locale.atof(match.groups()[0])
 print 'R$ %f' % price 
